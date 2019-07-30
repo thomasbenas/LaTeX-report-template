@@ -1,0 +1,27 @@
+%renewcommand{\thepage}{}
+
+	\AddToShipoutPicture{
+		\AtUpperLeftCorner{1.5cm}{1cm}{\includegraphics[width=5cm]{img/img_left.png}}
+		\AtUpperRightCorner{1.5cm}{1cm}{\includegraphics[width=4cm]{img/img_right.png}}
+	}
+
+ \begin{titlepage}
+
+    \begin{center}
+
+        \vspace*{10cm}
+
+        \textsc{\@title}
+
+        \vspace*{0.5cm}
+		
+        \@author
+
+        \@date
+				
+    \end{center}
+ 
+    
+\end{titlepage}
+
+\ClearShipoutPicture

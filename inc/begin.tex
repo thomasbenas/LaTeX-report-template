@@ -1,0 +1,35 @@
+\enlargethispage{2cm} %reduire marge de bas de page
+
+
+% relatif a la page de garde*/
+\newcommand{\blap}[1]{\vbox to 0pt{#1\vss}}
+\newcommand\AtUpperLeftCorner[3]{
+  \put(\LenToUnit{#1},\LenToUnit{\dimexpr\paperheight-#2}){\blap{#3}}
+}
+
+\newcommand\AtUpperRightCorner[3]{
+  \put(\LenToUnit{\dimexpr\paperwidth-#1},\LenToUnit{\dimexpr\paperheight-#2}){\blap{\llap{#3}}}
+}
+ 
+\title{\LARGE{TITRE}}
+\author{AUTEUR}
+
+\makeatletter 
+
+
+
+
+
+\begin{document}
+
+	\hypersetup{pdfborder=0 0 0} % enlever encadrement des liens internes
+	\include{inc/coverSheet} % inclure la page de garde
+
+	
+	%enleve la numerotation sur la premiere page (page de garde)	
+	\renewcommand{\thepage}{\arabic{page}}
+	\setcounter{page}{1}
+	
+
+	\tableofcontents % Fait la table des matiere
+	\newpage % change de page
