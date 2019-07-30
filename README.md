@@ -21,13 +21,15 @@ My personal set of files to start a LaTeX document
 
 	\end{tikzpicture}
   ```
+  ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/uml.png)
+  
 ## Highlighting code
 
 ```LATEX
  \lstinputlisting[language=Pascal]{source.p}
 ```
 
-![Image of UML](https://github.com/akgx99/LaTex-start/blob/master/img/code.png)
+![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/code_pascal.png)
 
 Or
 
@@ -42,4 +44,4 @@ Write('Pascal keywords.');
 \end{lstlisting}
 ```
 
-![Image of UML](https://github.com/akgx99/LaTex-start/blob/master/img/code.png)
+![Image of UML](https://github.com/akgx99/LaTex-start/blob/master/img/code_pascal.png)
