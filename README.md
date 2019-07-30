@@ -60,4 +60,17 @@ Write('Pascal keywords.');
 \end{lstlisting}
 ```
 
-![Image of UML](https://github.com/akgx99/LaTex-start/blob/master/img/code_pascal.png)
+![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/code_pascal.png)
+
+## CSV --> LaTeX table
+
+```CSV
+number, product
+1, apple
+2, banana
+```
+
+```LATEX
+\csvautotabular{inc/numberAndProduct.csv}
+```
+![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/table.png)
