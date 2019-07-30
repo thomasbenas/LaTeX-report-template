@@ -3,6 +3,8 @@ My personal set of files to start a LaTeX document
 
 ## UML
 
+### Code :
+
 ```LATEX
 \begin{figure}[h]
 
@@ -19,3 +21,25 @@ My personal set of files to start a LaTeX document
 
 	\end{tikzpicture}
   ```
+## Highlighting code
+
+```LATEX
+ \lstinputlisting[language=Pascal]{source.p}
+```
+
+![Image of UML](https://github.com/akgx99/LaTex-start/blob/master/img/code.png)
+
+Or
+
+```LATEX
+\begin{lstlisting}[language=Pascal] 
+for i:=maxint to 0 do
+begin
+{ do nothing }
+end;
+Write('Case insensitive ');
+Write('Pascal keywords.');
+\end{lstlisting}
+```
+
+![Image of UML](https://github.com/akgx99/LaTex-start/blob/master/img/code.png)
