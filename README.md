@@ -8,18 +8,34 @@ My personal set of files to start a LaTeX document
 ```LATEX
 \begin{figure}[h]
 
-	\begin{tikzpicture}
-
-	  \begin{class}[text width=8cm]{ClassName}{0,0}
-	    \attribute{name : attribute type}
-	    \attribute{name : attribute type = default value}
+	\begin{figure}[h]
+	\begin{tikzpicture}[show background grid]
+	  \begin{class}[text width=5cm]{BankAccount}{0,0}
+	    \attribute{owner : String}
+	    \attribute{balance : Dollars = 0}
 	
-	    \operation{name(parameter list) : type of value returned}
-	    % virtual operation
-	    \operation[0]{name(parameters list) : type of value returned}
+	    \operation{deposit(amount : Dollars)}
+	    \operation[0]{withdrawl(amount : Dollars)}
 	  \end{class}
-
+	
+	  \begin{class}[text width=7cm]{CheckingAccount}{-5,-5}
+	    \inherit{BankAccount}
+	    \attribute{insufficientFundsFee : Dollars}
+	
+	    \operation{processCheck ( checkToProcess : Check )}
+	    \operation{withdrawal ( amount : Dollars )}
+	  \end{class}
+	
+	  \begin{class}[text width=7cm]{SavingsAccount}{5,-5}
+	    \inherit{BankAccount}
+	    \attribute{annualInteresRate : Percentage}
+	
+	    \operation{depositMonthlyInterest ( )}
+	    \operation{withdrawal ( amount : Dollars )}
+	  \end{class}
+	
 	\end{tikzpicture}
+	\end{figure}
   ```
   ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/uml.png)
   
