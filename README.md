@@ -37,7 +37,7 @@ My personal set of files to start a LaTeX document
 	\end{tikzpicture}
 	\end{figure}
   ```
-  ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/uml.png)
+  ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/uml.png)
   
 ## Highlighting code
 
@@ -45,7 +45,7 @@ My personal set of files to start a LaTeX document
  \lstinputlisting[language=Pascal]{source.p}
 ```
 
-![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/code_pascal.png)
+![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/code_pascal.png)
 
 Or
 
@@ -60,7 +60,7 @@ Write('Pascal keywords.');
 \end{lstlisting}
 ```
 
-![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/code_pascal.png)
+![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/code_pascal.png)
 
 ## CSV --> LaTeX table
 
@@ -73,4 +73,4 @@ number, product
 ```LATEX
 \csvautotabular{inc/numberAndProduct.csv}
 ```
-![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/table.png)
+![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/table.png)
