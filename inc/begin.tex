@@ -1,26 +1,54 @@
 \enlargethispage{2cm} %reduire marge de bas de page
 
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{img/background.png}%
+\vfill
+}}}
 
-% relatif a la page de garde*/
-\newcommand{\blap}[1]{\vbox to 0pt{#1\vss}}
-\newcommand\AtUpperLeftCorner[3]{
-  \put(\LenToUnit{#1},\LenToUnit{\dimexpr\paperheight-#2}){\blap{#3}}
-}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 
-\newcommand\AtUpperRightCorner[3]{
-  \put(\LenToUnit{\dimexpr\paperwidth-#1},\LenToUnit{\dimexpr\paperheight-#2}){\blap{\llap{#3}}}
+\definecolor{gmitblue}{RGB}{41,152,205}
+\definecolor{textcolor}{RGB}{240,240,240}
+
+\usetikzlibrary{calc}
+\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+\begin{tikzpicture}[overlay, remember picture]%
+    \fill[gmitblue] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
+    \node[anchor=north west, text=textcolor, font=\large\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {Title};
+    \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=0.1]{img/img_right.png}};
+      %node[minimum width=\x2-\x1, minimum height=2cm, draw, rectangle, fill=blue!20, anchor=north west, align=left, text width=\x2-\x1] at ($(current page.north west)$) {\Large\bfseries \quad #1};
+\end{tikzpicture}
 }
- 
-\title{\LARGE{TITRE}}
-\author{AUTEUR}
+\fancyfoot[CE]{
+    \begin{tikzpicture}[overlay, remember picture]%
+    \fill[gmitblue] (current page.south west) rectangle ($(current page.south east)+(0,.5in)$);
+    \node[anchor=south west, text=textcolor, minimum size=.5in] at (current page.south west) {\thepage};
+\end{tikzpicture}
+}
+\fancyfoot[CO]{
+    \begin{tikzpicture}[overlay, remember picture]%
+    \fill[gmitblue] (current page.south west) rectangle ($(current page.south east)+(0,.5in)$);
+    \node[anchor=south east, text=textcolor, minimum size=.5in] at (current page.south east) {\thepage};
+\end{tikzpicture}
+}
+\setlength{\headheight}{12pt}
+
+\title{Title}
+\author{Author}
 
 \makeatletter 
 
-
-
-
-
 \begin{document}
+    \AddToShipoutPicture*{\BackgroundPic}% mettre l'image de fond
 
 	\hypersetup{pdfborder=0 0 0} % enlever encadrement des liens internes
 	\include{inc/coverSheet} % inclure la page de garde
