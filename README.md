@@ -79,7 +79,15 @@ number, product
 
 ```LATEX
 \begin{info}
-	Some information
+	Some infomartion
 \end{info}
+
+\begin{warning}
+	Some infomartion
+\end{warning}
+
+\begin{advice}
+	Some infomartion
+\end{advice}
 ```
 ![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/info_box.png)

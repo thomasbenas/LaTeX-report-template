@@ -12,17 +12,38 @@ keepaspectratio]{img/background.png}%
 
 \patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
 
-\definecolor{gmitblue}{RGB}{41,152,205}
+\definecolor{blueCustom}{RGB}{41,152,205}
+\definecolor{redCustom}{RGB}{205,41,41}
+\definecolor{greenCustom}{RGB}{119,205,41}
 \definecolor{textcolor}{RGB}{240,240,240}
 
 \newtcolorbox{info}{
     enhanced,sharp corners,
-    width={14cm},
+    width={16cm},
     enlarge top by=1cm,
-    colframe=gmitblue,
+    colframe=blueCustom,
     colback=white,
     overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{img/info.png}};}
 }
+
+\newtcolorbox{warning}{
+    enhanced,sharp corners,
+    width={16cm},
+    enlarge top by=1cm,
+    colframe=redCustom,
+    colback=white,
+    overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{img/warning.png}};}
+}
+
+\newtcolorbox{advice}{
+    enhanced,sharp corners,
+    width={16cm},
+    enlarge top by=1cm,
+    colframe=greenCustom,
+    colback=white,
+    overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{img/advice.png}};}
+}
+
 
 \usetikzlibrary{calc}
 \renewcommand{\headrulewidth}{0pt}
@@ -31,7 +52,7 @@ keepaspectratio]{img/background.png}%
 \fancyhf{}
 \fancyhead[C]{%
 \begin{tikzpicture}[overlay, remember picture]%
-    \fill[gmitblue] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
+    \fill[blueCustom] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
     \node[anchor=north west, text=textcolor, font=\large\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {Title};
     \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=0.1]{img/img_right.png}};
       %node[minimum width=\x2-\x1, minimum height=2cm, draw, rectangle, fill=blue!20, anchor=north west, align=left, text width=\x2-\x1] at ($(current page.north west)$) {\Large\bfseries \quad #1};
@@ -39,13 +60,13 @@ keepaspectratio]{img/background.png}%
 }
 \fancyfoot[CE]{
     \begin{tikzpicture}[overlay, remember picture]%
-    \fill[gmitblue] (current page.south west) rectangle ($(current page.south east)+(0,.5in)$);
+    \fill[blueCustom] (current page.south west) rectangle ($(current page.south east)+(0,.5in)$);
     \node[anchor=south west, text=textcolor, minimum size=.5in] at (current page.south west) {\thepage};
 \end{tikzpicture}
 }
 \fancyfoot[CO]{
     \begin{tikzpicture}[overlay, remember picture]%
-    \fill[gmitblue] (current page.south west) rectangle ($(current page.south east)+(0,.5in)$);
+    \fill[blueCustom] (current page.south west) rectangle ($(current page.south east)+(0,.5in)$);
     \node[anchor=south east, text=textcolor, minimum size=.5in] at (current page.south east) {\thepage};
 \end{tikzpicture}
 }
