@@ -15,6 +15,7 @@ keepaspectratio]{img/background.png}%
 \definecolor{blueCustom}{RGB}{41,152,205}
 \definecolor{redCustom}{RGB}{205,41,41}
 \definecolor{greenCustom}{RGB}{119,205,41}
+\definecolor{orangeCustom}{RGB}{230,129,62}
 \definecolor{textcolor}{RGB}{240,240,240}
 
 \newtcolorbox{info}{
@@ -42,6 +43,15 @@ keepaspectratio]{img/background.png}%
     colframe=greenCustom,
     colback=white,
     overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{img/advice.png}};}
+}
+
+\newtcolorbox{definition}{
+    enhanced,sharp corners,
+    width={16cm},
+    enlarge top by=0.3cm,
+    colframe=orangeCustom,
+    colback=white,
+    overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{img/def.png}};}
 }
 
 
