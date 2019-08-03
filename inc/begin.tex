@@ -54,8 +54,9 @@ keepaspectratio]{img/background.png}%
 	\include{inc/coverSheet} % inclure la page de garde
 
 	
-	%enleve la numerotation sur la premiere page (page de garde)	
-	\renewcommand{\thepage}{\arabic{page}}
+    \renewcommand{\thepage}{page \arabic{page}}
+    \renewcommand{\thesubsubsection}{\alph{subsubsection})} 
+    %enleve la numerotation sur la premiere page (page de garde)	
 	\setcounter{page}{1}
 	
 
