@@ -74,3 +74,12 @@ number, product
 \csvautotabular{inc/numberAndProduct.csv}
 ```
 ![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/table.png)
+
+## Info box
+
+```LATEX
+\begin{info}
+	Some information
+\end{info}
+```
+![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/info_box.png)
