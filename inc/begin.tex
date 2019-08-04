@@ -65,21 +65,15 @@ keepaspectratio]{img/background.png}%
     \fill[blueCustom] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
     \node[anchor=north west, text=textcolor, font=\large\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {Title};
     \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=0.1]{img/img_right.png}};
-      %node[minimum width=\x2-\x1, minimum height=2cm, draw, rectangle, fill=blue!20, anchor=north west, align=left, text width=\x2-\x1] at ($(current page.north west)$) {\Large\bfseries \quad #1};
 \end{tikzpicture}
 }
-\fancyfoot[CE]{
-    \begin{tikzpicture}[overlay, remember picture]%
-    \fill[blueCustom] (current page.south west) rectangle ($(current page.south east)+(0,.5in)$);
-    \node[anchor=south west, text=textcolor, minimum size=.5in] at (current page.south west) {\thepage};
-\end{tikzpicture}
-}
+
 \fancyfoot[CO]{
     \begin{tikzpicture}[overlay, remember picture]%
-    \fill[blueCustom] (current page.south west) rectangle ($(current page.south east)+(0,.5in)$);
-    \node[anchor=south east, text=textcolor, minimum size=.5in] at (current page.south east) {\thepage};
+    \node[anchor=south east, text=black, font=\large, minimum size=.5in] at (current page.south east) {\thepage};
 \end{tikzpicture}
 }
+
 \setlength{\headheight}{12pt}
 
 \title{Title}
