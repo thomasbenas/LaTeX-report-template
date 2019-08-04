@@ -70,6 +70,7 @@ keepaspectratio]{img/background.png}%
 
 \fancyfoot[CO]{
     \begin{tikzpicture}[overlay, remember picture]%
+    \node[anchor=south west, opacity=0.5] at (current page.south west) {\includegraphics[scale=.3]{img/img_bottom.png}};
     \node[anchor=south east, text=black, font=\large, minimum size=.5in] at (current page.south east) {\thepage};
 \end{tikzpicture}
 }
