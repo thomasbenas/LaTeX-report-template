@@ -62,7 +62,7 @@ keepaspectratio]{img/background.png}%
 \fancyhead[C]{%
 \begin{tikzpicture}[overlay, remember picture]%
     \fill[blueCustom] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
-    \node[anchor=north west, text=textcolor, font=\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {Title};
+    \node[anchor=north west, text=textcolor, font=\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {Organisation du projet};
     \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=.2]{img/img_right.png}};
       %node[minimum width=\x2-\x1, minimum height=2cm, draw, rectangle, fill=blueCustom!20, anchor=north west, align=left, text width=\x2-\x1] at ($(current page.north west)$) {\Large\bfseries \quad #1};
 \end{tikzpicture}
@@ -70,7 +70,7 @@ keepaspectratio]{img/background.png}%
 
 \fancyfoot[CO]{
     \begin{tikzpicture}[overlay, remember picture]%
-    \node[anchor=south west, opacity=0.5] at (current page.south west) {\includegraphics[scale=.3]{img/img_bottom.png}};
+    %\node[anchor=south west, opacity=0.5] at (current page.south west) {\includegraphics[scale=.3]{img/img_bottom.png}};
     % \node[anchor=south east, text=black, font=\large, minimum size=.10in] at (current page.south east) {\thepage};  % left
     \node[midway, text=black, font=\large] at (current page.south) {\thepage}; %center 
 \end{tikzpicture}
@@ -85,9 +85,11 @@ keepaspectratio]{img/background.png}%
 
 \begin{document}
     \AddToShipoutPicture*{\BackgroundPic}% mettre l'image de fond
+    \include{inc/coverSheet} % inclure la page de garde
+    \ClearShipoutPicture
 
 	\hypersetup{pdfborder=0 0 0} % enlever encadrement des liens internes
-	\include{inc/coverSheet} % inclure la page de garde
+	
 
 	
 	
