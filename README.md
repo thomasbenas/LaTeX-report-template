@@ -105,15 +105,15 @@ number, product
 
 ```LATEX
 \begin{info}
-	Some information
+	Une info.
 \end{info}
 
 \begin{warning}
-	Some information
+	Une info.
 \end{warning}
 
 \begin{advice}
-	Some information
+	Une info.
 \end{advice}
 ```
 ![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/info_box.png)
