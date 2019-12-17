@@ -1,9 +1,35 @@
 # LaTex-start
-My personal set of files to start a LaTeX document
 
-## UML
+## introduction
 
-### Code :
+Ce projet, est un template de document / rapport LaTeX. Je m'en sert pour rendre des documents dans le cadre de mes études. Il comprend plusieurs packages que j'utilises régulièrement, ainsi 
+que quelque morceaux de code LaTeX me facilitant le travail. Il est prêt à l'emploi et personnalisable facilement.
+
+## Dépendances
+- Un environnement LaTeX
+
+## Quick start
+Pour compiler et éditer votre document, seulement les fichiers et dossiers suivants vous seront utiles :
+- start.tex
+- inc/ 
+- img/
+
+Ensuite vous pouvez soit utiliser un IDE LaTeX et compiler directement **start.tex** ou bien vous placez dans le dossier contenant votre document et exécuter la commande suivante :
+```
+pdflatex start.tex
+```
+A la suite de quoi devrait être générer un fichier **.pdf** du même nom.
+
+Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comment personnalisé le document.
+
+## Liste des "fonctionnalités"
+- page de garde
+- Mise en forme moderne du code
+- Mise en page esthétique avec bandeau de couleur
+- Table des matières automatique
+- Prise en charge du français
+
+- UML
 
 ```LATEX
 \begin{figure}[h]
@@ -39,7 +65,8 @@ My personal set of files to start a LaTeX document
   ```
   ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/uml.png)
   
-## Highlighting code
+  
+-  Highlighting code
 
 ```LATEX
  \lstinputlisting[language=Pascal]{source.p}
@@ -62,7 +89,7 @@ Write('Pascal keywords.');
 
 ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/code_pascal.png)
 
-## CSV --> LaTeX table
+- CSV --> LaTeX table
 
 ```CSV
 number, product
@@ -75,19 +102,19 @@ number, product
 ```
 ![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/table.png)
 
-## Info box
+- Info box
 
 ```LATEX
 \begin{info}
-	Some infomartion
+	Some information
 \end{info}
 
 \begin{warning}
-	Some infomartion
+	Some information
 \end{warning}
 
 \begin{advice}
-	Some infomartion
+	Some information
 \end{advice}
 ```
 ![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/info_box.png)
