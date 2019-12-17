@@ -17,9 +17,9 @@ Ensuite vous pouvez soit utiliser un IDE LaTeX et compiler directement **start.t
 ```
 pdflatex start.tex
 ```
-À la suite de quoi devrait être généré un fichier **. PDF du même nom.
+À la suite de quoi devrait être généré un fichier **. PDF** du même nom.
 
-Pour aller plus loin, Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comment personnalisé le document.
+Pour aller plus loin, Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comment personnalisé le document justement.
 
 ## Liste des "fonctionnalités"
 - page de garde
