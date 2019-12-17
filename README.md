@@ -2,14 +2,13 @@
 
 ## introduction
 
-Ce projet, est un template de document / rapport LaTeX. Je m'en sert pour rendre des documents dans le cadre de mes études. Il comprend plusieurs packages que j'utilises régulièrement, ainsi 
-que quelque morceaux de code LaTeX me facilitant le travail. Il est prêt à l'emploi et personnalisable facilement.
+Ce projet, est un template de document / rapport Latex. Je m'en sers pour rendre des documents dans le cadre de mes études. Il comprend plusieurs packages que j'utilise régulièrement, ainsi que quelques morceaux de code Latex me facilitant le travail. Il est prêt à l'emploi et personnalisable facilement.
 
 ## Dépendances
 - Un environnement LaTeX
 
 ## Quick start
-Pour compiler et éditer votre document, seulement les fichiers et dossiers suivants vous seront utiles :
+Pour compiler et éditer votre document, seulement le fichier et dossiers suivants vous seront utiles :
 - start.tex
 - inc/ 
 - img/
@@ -18,9 +17,9 @@ Ensuite vous pouvez soit utiliser un IDE LaTeX et compiler directement **start.t
 ```
 pdflatex start.tex
 ```
-A la suite de quoi devrait être générer un fichier **.pdf** du même nom.
+À la suite de quoi devrait être généré un fichier **. PDF du même nom.
 
-Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comment personnalisé le document.
+Pour aller plus loin, Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comment personnalisé le document.
 
 ## Liste des "fonctionnalités"
 - page de garde
@@ -29,7 +28,7 @@ Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comm
 - Table des matières automatique
 - Prise en charge du français
 
-- UML
+- Représentation soignée de diagramme UML
 
 ```LATEX
 \begin{figure}[h]
@@ -66,7 +65,7 @@ Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comm
   ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/uml.png)
   
   
--  Highlighting code
+-  Mise en forme et coloration syntaxique du code
 
 ```LATEX
  \lstinputlisting[language=Pascal]{source.p}
@@ -74,7 +73,7 @@ Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comm
 
 ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/code_pascal.png)
 
-Or
+ou
 
 ```LATEX
 \begin{lstlisting}[language=Pascal] 
@@ -89,7 +88,7 @@ Write('Pascal keywords.');
 
 ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/code_pascal.png)
 
-- CSV --> LaTeX table
+- Possibilité de générer des tableau à partir d'un fichier CSV
 
 ```CSV
 number, product
@@ -102,7 +101,7 @@ number, product
 ```
 ![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/table.png)
 
-- Info box
+- Insérer des info box visuelle bien pratique
 
 ```LATEX
 \begin{info}
@@ -118,3 +117,9 @@ number, product
 \end{advice}
 ```
 ![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/info_box.png)
+
+## Notes
+
+- Pensez à bien compiler deux fois de suite (des problèmes de *box overflow* avec certains éléments)
+- Il y a de même des *warring* voire des erreurs qui s'afficheront lors de la compilation : "c'est normal", je travaille à optimiser ça
+- Le code n'est sûrement pas *optimum* (je suis encore novice en Latex), donc si vous avez des pistes d'améliorations !
