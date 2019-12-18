@@ -54,6 +54,13 @@ keepaspectratio]{img/background.png}%
     overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{img/def.png}};}
 }
 
+
+%\lstset{style=codeBloc} % for command shell display only
+\lstset{style=mystyle} % normal code display
+\newtcblisting{commandshell}{colback=black,colupper=white,colframe=black!75!black,
+listing only,listing options={style=codeBloc},
+every listing line={\textcolor{greenCustom}{\small\ttfamily\bfseries user@desktop > }}}
+
 \usetikzlibrary{calc}
 \renewcommand{\headrulewidth}{0pt}
 

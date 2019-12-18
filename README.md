@@ -118,6 +118,22 @@ number, product
 ```
 ![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/info_box.png)
 
+- Mise en forme de commande Bash etc.
+```LATEX
+\begin{commandshell}
+	cd truc
+\end{commandshell}
+```
+
+**attention** pour utiliser ceci, il faut changer le style de mise en forme du code de la manière suivante dans **begin.tex** :
+```LATEX
+\lstset{style=codeBloc} % for command shell display only
+%\lstset{style=mystyle} % normal code display
+```
+
+![Commande Bash etc.](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/bash_command.png)
+
+
 ## Notes
 
 - Pensez à bien compiler deux fois de suite (des problèmes de *box overflow* avec certains éléments)
