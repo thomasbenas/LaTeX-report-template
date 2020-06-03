@@ -1,4 +1,4 @@
-# LaTex-start
+# LaTex-start - Dossier rapport de Stage
 
 ## introduction
 
