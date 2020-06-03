@@ -1,3 +1,5 @@
+\input{config.tex}
+
 \enlargethispage{2cm} %reduire marge de bas de page
 
 \newcommand\BackgroundPic{%
@@ -6,7 +8,7 @@
 \vfill
 \centering
 \includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{img/background.png}%
+keepaspectratio]{\BackgroundTitlePage}%
 \vfill
 }}}
 
@@ -68,9 +70,9 @@ every listing line={\textcolor{greenCustom}{\small\ttfamily\bfseries user@deskto
 \fancyhf{}
 \fancyhead[C]{%
 \begin{tikzpicture}[overlay, remember picture]%
-    \fill[blueCustom] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
-    \node[anchor=north west, text=textcolor, font=\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {Name};
-    \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=.2]{img/img_right.png}};
+    \fill[\Color] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
+    \node[anchor=north west, text=textcolor, font=\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {\titre};
+    \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=.2]{\ImageRightPage}};
       %node[minimum width=\x2-\x1, minimum height=2cm, draw, rectangle, fill=blueCustom!20, anchor=north west, align=left, text width=\x2-\x1] at ($(current page.north west)$) {\Large\bfseries \quad #1};
 \end{tikzpicture}
 }
@@ -85,8 +87,8 @@ every listing line={\textcolor{greenCustom}{\small\ttfamily\bfseries user@deskto
 
 \setlength{\headheight}{12pt}
 
-\title{\Huge{Title}}
-\author{Author}
+\title{\Huge{\nom}}
+\author{\auteur}
 
 \makeatletter 
 
@@ -94,10 +96,15 @@ every listing line={\textcolor{greenCustom}{\small\ttfamily\bfseries user@deskto
     \AddToShipoutPicture*{\BackgroundPic}% mettre l'image de fond
     \include{inc/coverSheet} % inclure la page de garde
     \ClearShipoutPicture
+    
 
 	\hypersetup{pdfborder=0 0 0} % enlever encadrement des liens internes
 	
 
+    \newpage
+    \thispagestyle{empty}
+    \mbox{}
+    \newpage
 	
 	
     \renewcommand{\thepage}{page \arabic{page}}
@@ -107,4 +114,4 @@ every listing line={\textcolor{greenCustom}{\small\ttfamily\bfseries user@deskto
 	
 
     \tableofcontents % Fait la table des matiere
-	\newpage % change de page
+    \newpage % change de page
