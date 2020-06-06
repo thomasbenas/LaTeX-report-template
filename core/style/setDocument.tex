@@ -6,7 +6,7 @@
 \vfill
 \centering
 \includegraphics[width=\paperwidth,height=\paperheight,%
-keepaspectratio]{assets/img/background.png}%
+keepaspectratio]{\fondPageDeGardeChemin}%
 \vfill
 }}}
 
@@ -69,8 +69,8 @@ every listing line={\textcolor{greenCustom}{\small\ttfamily\bfseries user@deskto
 \fancyhead[C]{%
 \begin{tikzpicture}[overlay, remember picture]%
     \fill[blueCustom] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
-    \node[anchor=north west, text=textcolor, font=\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {Name};
-    \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=.2]{assets/img/img_right.png}};
+    \node[anchor=north west, text=textcolor, font=\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {\titre};
+    \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=.2]{\ImageEnTetePages}};
 \end{tikzpicture}
 }
 
