@@ -1,0 +1,27 @@
+\input{config.tex}
+\input{core/packages/packagesList.tex}
+\input{core/style/setCode.tex} %optionnel
+\input{core/style/setDocument.tex}
+
+\setlength{\headheight}{15pt}
+
+\title{\Huge{Title}}
+\author{Author}
+
+\makeatletter 
+
+\begin{document}
+    \AddToShipoutPicture*{\BackgroundPic}% mettre l'image de fond
+    \include{core/style/setcoverSheet} % inclure la page de garde
+    \ClearShipoutPicture
+
+	\hypersetup{pdfborder=0 0 0} % enlever encadrement des liens internes
+	
+    \renewcommand{\thepage}{page \arabic{page}}
+    \renewcommand{\thesubsubsection}{\alph{subsubsection})} 
+    %enleve la numerotation sur la premiere page (page de garde)	
+	\setcounter{page}{1}
+	
+
+    \tableofcontents % Fait la table des matiere
+	\newpage % change de page
