@@ -13,14 +13,22 @@ Pour compiler et éditer votre document, seuls les éléments suivants vous sero
 - core/
 
 Ensuite vous pouvez soit utiliser un IDE LaTeX et compiler directement **start.tex** ou bien vous placez dans le dossier contenant votre document et exécuter la commande suivante :
-```
-pdflatex start.tex
-```
+
+`pdflatex start.tex`
+
 À la suite de quoi devrait être généré un fichier **.pdf** du même nom.
 
 ### Configuration du document
 
-Le document se configure à l'aide du fichier `config.tex` 
+Le document se configure à l'aide du fichier `config.tex`. 
+
+Vous pouvez changer facilement différents éléments du document :
+- Le titre 
+- L'auteur 
+- L'année d'édition 
+- La couleur principale 
+- Le fond de la page de garde
+- L'image d'en-tête des documents
 
 ## Liste des "fonctionnalités"
 - page de garde
