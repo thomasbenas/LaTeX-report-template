@@ -1,25 +1,35 @@
-# LaTex-start - Dossier rapport de Stage
+# LaTex-start
 
 ## introduction
 
-Ce projet, est un template de document / rapport Latex. Je m'en sers pour rendre des documents dans le cadre de mes études. Il comprend plusieurs packages que j'utilise régulièrement, ainsi que quelques morceaux de code Latex me facilitant le travail. Il est prêt à l'emploi et personnalisable facilement.
+Un template LaTeX pour créer des rapports à l'allure professionnel rapidement et sans efforts.
 
 ## Dépendances
 - Un environnement LaTeX
 
 ## Quick start
-Pour compiler et éditer votre document, seulement le fichier et dossiers suivants vous seront utiles :
+Pour compiler et éditer votre document, seuls les éléments suivants vous seront utiles :
 - start.tex
-- inc/ 
-- img/
+- assets/ 
+- core/
 
 Ensuite vous pouvez soit utiliser un IDE LaTeX et compiler directement **start.tex** ou bien vous placez dans le dossier contenant votre document et exécuter la commande suivante :
-```
-pdflatex start.tex
-```
-À la suite de quoi devrait être généré un fichier **. PDF** du même nom.
 
-Pour aller plus loin, Le document : **personnaliser_document.pdf**  permet de vous renseigner sur comment personnalisé le document justement.
+`pdflatex start.tex`
+
+À la suite de quoi devrait être généré un fichier start**.pdf**.
+
+### Configuration du document
+
+Le document se configure à l'aide du fichier `config.tex`. 
+
+Vous pouvez changer facilement différents éléments du document :
+- Le titre 
+- L'auteur 
+- L'année d'édition 
+- La couleur principale 
+- Le fond de la page de garde
+- L'image d'en-tête des documents
 
 ## Liste des "fonctionnalités"
 - page de garde
@@ -62,7 +72,7 @@ Pour aller plus loin, Le document : **personnaliser_document.pdf**  permet de vo
 	\end{tikzpicture}
 	\end{figure}
   ```
-  ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/uml.png)
+  ![code pascal](https://github.com/akgx99/LaTex-start/blob/master/assets/img/readMeImg/uml.png)
   
   
 -  Mise en forme et coloration syntaxique du code
@@ -71,7 +81,7 @@ Pour aller plus loin, Le document : **personnaliser_document.pdf**  permet de vo
  \lstinputlisting[language=Pascal]{source.p}
 ```
 
-![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/code_pascal.png)
+![code pascal](https://github.com/akgx99/LaTex-start/blob/master/assets/img/readMeImg/code_pascal.png)
 
 ou
 
@@ -86,7 +96,7 @@ Write('Pascal keywords.');
 \end{lstlisting}
 ```
 
-![code pascal](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/code_pascal.png)
+![code pascal](https://github.com/akgx99/LaTex-start/blob/master/assets/img/readMeImg/code_pascal.png)
 
 - Possibilité de générer des tableau à partir d'un fichier CSV
 
@@ -99,7 +109,7 @@ number, product
 ```LATEX
 \csvautotabular{inc/numberAndProduct.csv}
 ```
-![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/table.png)
+![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/assets/img/readMeImg/table.png)
 
 - Insérer des info box visuelle bien pratique
 
@@ -116,7 +126,7 @@ number, product
 	Une info.
 \end{advice}
 ```
-![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/info_box.png)
+![Image of CSV-->table](https://github.com/akgx99/LaTex-start/blob/master/assets/img/readMeImg/info_box.png)
 
 - Mise en forme de commande Bash etc.
 ```LATEX
@@ -131,11 +141,9 @@ number, product
 %\lstset{style=mystyle} % normal code display
 ```
 
-![Commande Bash etc.](https://github.com/akgx99/LaTex-start/blob/master/img/readMeImg/bash_command.png)
+![Commande Bash etc.](https://github.com/akgx99/LaTex-start/blob/master/assets/img/readMeImg/bash_command.png)
 
 
 ## Notes
 
 - Pensez à bien compiler deux fois de suite (des problèmes de *box overflow* avec certains éléments)
-- Il y a de même des *warring* voire des erreurs qui s'afficheront lors de la compilation : "c'est normal", je travaille à optimiser ça
-- Le code n'est sûrement pas *optimum* (je suis encore novice en Latex), donc si vous avez des pistes d'améliorations !

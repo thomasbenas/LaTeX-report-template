@@ -1,0 +1,81 @@
+\enlargethispage{2cm} %reduire marge de bas de page
+
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{\fondPageDeGardeChemin}%
+\vfill
+}}}
+
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+
+\definecolor{blueCustom}{RGB}{41,152,205}
+\definecolor{redCustom}{RGB}{205,41,41}
+\definecolor{greenCustom}{RGB}{119,205,41}
+\definecolor{orangeCustom}{RGB}{230,129,62}
+\definecolor{textcolor}{RGB}{240,240,240}
+
+\newtcolorbox{info}{
+    enhanced,sharp corners,
+    width={16cm},
+    enlarge top by=0.3cm,
+    colframe=blueCustom,
+    colback=white,
+    overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{assets/img/info.png}};}
+}
+
+\newtcolorbox{warning}{
+    enhanced,sharp corners,
+    width={16cm},
+    enlarge top by=0.3cm,
+    colframe=redCustom,
+    colback=white,
+    overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{assets/img/warning.png}};}
+}
+
+\newtcolorbox{advice}{
+    enhanced,sharp corners,
+    width={16cm},
+    enlarge top by=0.3cm,
+    colframe=greenCustom,
+    colback=white,
+    overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{assets/img/advice.png}};}
+}
+
+\newtcolorbox{definition}{
+    enhanced,sharp corners,
+    width={16cm},
+    enlarge top by=0.3cm,
+    colframe=orangeCustom,
+    colback=white,
+    overlay={\node at (frame.north west) {\includegraphics[scale=0.1]{assets/img/def.png}};}
+}
+
+
+%\lstset{style=codeBloc} % for command shell display only
+\lstset{style=mystyle} % normal code display
+\newtcblisting{commandshell}{colback=black,colupper=white,colframe=black!75!black,
+listing only,listing options={style=codeBloc},
+every listing line={\textcolor{greenCustom}{\small\ttfamily\bfseries user@desktop > }}}
+
+\usetikzlibrary{calc}
+\renewcommand{\headrulewidth}{0pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{%
+\begin{tikzpicture}[overlay, remember picture]%
+    \fill[blueCustom] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
+    \node[anchor=north west, text=textcolor, font=\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {\titre};
+    \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=.2]{\ImageEnTetePages}};
+\end{tikzpicture}
+}
+
+\fancyfoot[CO]{
+    \begin{tikzpicture}[overlay, remember picture]%
+    \node[midway, text=black, font=\large] at (current page.south) {\thepage}; %center 
+\end{tikzpicture}
+}
