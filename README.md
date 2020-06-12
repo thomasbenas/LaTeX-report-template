@@ -17,7 +17,7 @@ Ensuite vous pouvez soit utiliser un IDE LaTeX et compiler directement **start.t
 
 `pdflatex start.tex`
 
-À la suite de quoi devrait être généré un fichier start**.pdf**.
+À la suite de quoi devrait être généré un fichier start **.pdf**.
 
 ### Configuration du document
 
