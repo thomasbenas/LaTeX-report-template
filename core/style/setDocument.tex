@@ -68,7 +68,7 @@ every listing line={\textcolor{greenCustom}{\small\ttfamily\bfseries user@deskto
 \fancyhf{}
 \fancyhead[C]{%
 \begin{tikzpicture}[overlay, remember picture]%
-    \fill[[\Color] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
+    \fill[\Color] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
     \node[anchor=north west, text=textcolor, font=\scshape, minimum size=1in, inner xsep=5mm] at (current page.north west) {\titre};
     \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=.2]{\ImageEnTetePages}};
 \end{tikzpicture}
