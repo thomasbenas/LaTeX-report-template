@@ -19,6 +19,11 @@
 \RequirePackage{lipsum}% génére du texte pour les exemples
 \RequirePackage{changepage}% permet de définir des marges à un élément (entre autre)
 \RequirePackage{eso-pic}% quelques outils utiles à d'autres packages
+\RequirePackage{listings}%
+\RequirePackage{lstautogobble}%
+\RequirePackage{zi4}% style de l'affichage de code          
+
+
 %layout configuration
 \usetikzlibrary{calc}
 \renewcommand{\headrulewidth}{0pt}
@@ -100,5 +105,33 @@
 }
 \titlespacing*{\subsubsection}{0pt}{10mm}{5mm}
 
+
+%code style
+\definecolor{bluekeywords}{rgb}{0.13, 0.13, 1}
+\definecolor{greencomments}{rgb}{0, 0.5, 0}
+\definecolor{redstrings}{rgb}{0.9, 0, 0}
+\definecolor{graynumbers}{rgb}{0.5, 0.5, 0.5}
+
+\usepackage{listings}
+\lstset{
+    autogobble,
+    columns=fullflexible,
+    showspaces=false,
+    showtabs=false,
+    breaklines=true,
+    showstringspaces=false,
+    breakatwhitespace=true,
+    escapeinside={(*@}{@*)},
+    commentstyle=\color{greencomments},
+    keywordstyle=\color{bluekeywords},
+    stringstyle=\color{redstrings},
+    numberstyle=\color{graynumbers},
+    basicstyle=\ttfamily\footnotesize,
+    frame=l,
+    framesep=12pt,
+    xleftmargin=12pt,
+    tabsize=4,
+    captionpos=b
+}
 
 \makeatother
