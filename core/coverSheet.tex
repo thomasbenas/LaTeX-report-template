@@ -1,0 +1,36 @@
+\newcommand\BackgroundPic{%
+\put(0,0){%
+\parbox[b][\paperheight]{\paperwidth}{%
+\vfill
+\centering
+\includegraphics[width=\paperwidth,height=\paperheight,%
+keepaspectratio]{\coverSheetImage}%
+\vfill
+}}}
+
+
+\AddToShipoutPicture*{\BackgroundPic}
+\begin{titlepage}
+
+    \begin{flushright}
+        \includegraphics[height=2cm]{\logoImage}
+    \end{flushright}
+
+    \vspace*{\fill}
+
+    \begin{adjustwidth}{5.5cm}{0.5cm}
+        \textbf{\textsc{\LARGE\title}}\\
+        \author
+    \end{adjustwidth}
+    \vspace*{5cm}    
+    \vspace*{\fill}
+
+    \begin{flushright}
+        \textbf{\large\date}
+    \end{flushright}
+\end{titlepage}
+\ClearShipoutPicture
+\setcounter{page}{1}
+
+\tableofcontents
+\newpage

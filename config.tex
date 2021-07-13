@@ -1,16 +1,19 @@
-% Ficher de configuration du document %
+%%%%%%%%%%% COLOR %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{mainColor}{HTML}{009ee6} %couleur principale du document (par défaut bleu)
+\definecolor{textColorHeader}{HTML}{f0f0f0} %couleur du header (par défaut gris)
 
-% Choix de la couleur [blueCustom] - [redCustom] - [orangeCustom] - [greenCustom] %
-\def\Color{blueCustom}
+%%%%%%%%%%% IMAGE %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Image de fond de la page de titre (chemin relatif à partir de start.tex) %
-\def\fondPageDeGardeChemin{assets/img/background.png}
+\def\headerImage{assets/img/paper-clip.png} %image d'en-tête du document
+\def\headerImageScale{.2}% échelle de l'image d'en-tête du document (0.2 par défaut)
+\def\coverSheetImage{assets/img/background.png} %image de la page de garde
+\def\logoImage{assets/img/logo.png} %image de logo sur la page de couverture
 
-% Image en-tête des pages (chemin relatif à partir de start.tex) %
-\def\ImageEnTetePages{assets/img/img_right.png}
 
-
-%Info du document%
-\def\titre{Exemple de titre}
-\def\auteur{Testou Testpa}
-\def\annee{2020}
+%%%%%%%%%%% INFOS %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\title{Titre du document}
+\def\author{Auteur du document}
+\def\date{\today}

@@ -1,7 +1,11 @@
-start.pdf
+
+*.pdf
 *.log
 *.aux
 *.out
 *.fdb_latexmk
 *.*.gz
 *.fls
+*.toc
+
+!/examples/document.pdf
