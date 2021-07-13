@@ -16,13 +16,24 @@
 \RequirePackage{geometry}% configuration du layout (marges etc)
 \RequirePackage[explicit]{titlesec}% style des titres
 \RequirePackage{xcolor}% couleurs personalisées
+\RequirePackage{hyperref}% lien hypertexte dans le doc
+\RequirePackage{awesomebox}% box infos etc
 \RequirePackage{lipsum}% génére du texte pour les exemples
 \RequirePackage{changepage}% permet de définir des marges à un élément (entre autre)
 \RequirePackage{eso-pic}% quelques outils utiles à d'autres packages
+\RequirePackage{csvsimple} % tableau depuis csv
+\RequirePackage{booktabs} % stylisation de tableau
 \RequirePackage{listings}%
 \RequirePackage{lstautogobble}%
 \RequirePackage{zi4}% style de l'affichage de code          
 
+
+%fonts
+\RequirePackage[scaled=.85]{helvet} 
+\renewcommand{\familydefault}{\sfdefault}
+
+\fontfamily{DejaVuSans}
+\renewcommand{\familydefault}{\sfdefault}
 
 %layout configuration
 \usetikzlibrary{calc}
@@ -134,4 +145,8 @@
     captionpos=b
 }
 
+%add of user info
+\input{config.tex}
+
+\hypersetup{pdfborder=0 0 0}
 \makeatother
