@@ -14,6 +14,7 @@
 \RequirePackage{geometry}% configuration du layout (marges etc)
 \RequirePackage{xcolor}% couleurs personalisées
 \RequirePackage{lipsum}% génére du texte pour les exemples
+\RequirePackage{changepage}% permet de définir des marges à un élément (entre autre)
 \RequirePackage{eso-pic}% quelques outils utiles à d'autres packages
 %layout configuration
 \usetikzlibrary{calc}
@@ -40,3 +41,4 @@
     \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=\headerImageScale]{\headerImage}};
 \end{tikzpicture}
 }
+\makeatother
