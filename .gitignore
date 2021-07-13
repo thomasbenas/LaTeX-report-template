@@ -7,4 +7,5 @@
 *.*.gz
 *.fls
 *.toc
-!example.pdf
+
+!/examples/document.pdf

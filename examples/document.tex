@@ -1,0 +1,22 @@
+\documentclass{core/report}
+
+\begin{document}
+\include{core/coverSheet}
+\section{Lorem Ipsum}
+\lipsum[1-2]
+
+\notebox{Lorem ipsum...}
+
+\subsection{Nulla malesuada}
+\lipsum[3-3]
+
+\subsubsection{ipsum}
+\begin{lstlisting}[language=Java,caption=Some Java code ]
+    public static int exp(int pow, int num) {
+    if (pow < 1) 
+        return 1; 
+    else
+        return num * exp(pow-1, num) ;
+}
+\end{lstlisting}
+\end{document}
