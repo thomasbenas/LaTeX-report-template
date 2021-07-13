@@ -73,9 +73,9 @@
 }
 
 %style section
-\renewcommand*\thesection{\arabic{section}}
+\renewcommand*\thesection{\roman{section})}
 
-\titleformat{\section}[hang]{\bfseries\sffamily\scshape}%
+\titleformat{\section}[hang]{\large\sffamily\scshape}%
 {\colorbox{mainColor}{%
            \raisebox{0pt}[12pt][3pt]{ \makebox[20pt]{% height, width
                 \fontfamily{phv}\selectfont\color{textColorHeader}{\thesection}}
@@ -88,12 +88,12 @@
 
 
 %style subsection
-\renewcommand*\thesubsection{\arabic{section}. \arabic{subsection}}
+\renewcommand*\thesubsection{\arabic{subsection})}
 
 
-\titleformat{\subsection}[hang]{\bfseries\sffamily\scshape}%
+\titleformat{\subsection}[hang]{\large\sffamily}%
 {\colorbox{mainColor}{%
-           \raisebox{0pt}[12pt][3pt]{ \makebox[30pt]{% height, width
+           \raisebox{0pt}[12pt][3pt]{ \makebox[20pt]{% height, width
                 \fontfamily{phv}\selectfont\color{textColorHeader}{\thesubsection}}
             }}}%
 {12pt}%
@@ -103,11 +103,11 @@
 \titlespacing*{\subsection}{0pt}{10mm}{5mm}
 
 %style subsection
-\renewcommand*\thesubsubsection{\arabic{section}. \arabic{subsection}. \arabic{subsubsection}}
+\renewcommand*\thesubsubsection{\normalsize\alph{subsubsection})}
 
-\titleformat{\subsubsection}[hang]{\bfseries\sffamily\scshape}%
+\titleformat{\subsubsection}[hang]{\large\sffamily}%
 {\colorbox{mainColor}{%
-           \raisebox{0pt}[12pt][3pt]{ \makebox[40pt]{% height, width
+           \raisebox{0pt}[12pt][3pt]{ \makebox[20pt]{% height, width
                 \fontfamily{phv}\selectfont\color{textColorHeader}{\thesubsubsection}}
             }}}%
 {12pt}%
