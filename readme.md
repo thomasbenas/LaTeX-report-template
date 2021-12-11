@@ -1,5 +1,5 @@
 # LaTeX-modern-document
-LaTeX-start est un template LaTeX pour créer des rapports à l'allure professionnelle rapidement et sans efforts.
+LaTeX-modern-document est un template LaTeX pour créer des rapports à l'allure professionnelle rapidement et sans efforts.
 
 # preview
 
