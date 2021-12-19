@@ -1,57 +1,57 @@
 # LaTeX-modern-document
-LaTeX-modern-document est un template LaTeX pour créer des rapports à l'allure professionnelle rapidement et sans efforts.
+LaTeX-modern-document is a LaTeX template to create professional looking reports quickly and effortlessly.
 
 # preview
 
-| page de garde  | exemple de page |
+| cover page | sample page |
 | :------------------: | :------------------: |
 | [![A custom title page](examples/cover-page.png)](examples/document.pdf) | [![A basic example page](examples/page.png)](examples/document.pdf) |
 
-# Dépendances
-* Un environnement LaTeX fonctionnel (TeXLive par exemple).
+# Dependencies
+* A functional LaTeX environment (TeXLive for example).
 
 # Quick start
-Pour utiliser ce document il suffit tout d'abord de le personnaliser selon votre convenance via le fichier `config.tex`, puis de le compiler :
+To use this document you first have to customize it to your liking via the `config.tex` file, then compile it:
 
-## En ligne de commande
-* vous pouvez compiler votre document avec la commande `pdflatex [nomdudoc].tex`.
+## In command line
+* you can compile your document with the command `pdflatex [name].tex`.
 
-## Avec un IDE / logiciel
+## With a software
 * VS code (avec l'extension LaTeX Workshop) ;
 * TeXMaker
 * Lyx
 * ...
 
-## Avec OverLeaf
-* Créer un compte (si vous n'en avez pas)
-* Ouvrez un nouveau projet
-* Importer **tout** (sauf le *readme*, le *.gitignore* et le dossier *examples*) les fichiers de ce repo sur overleaf
-* *Enjoy !* 
+## With OverLeaf
+* Create an account (if you don't have one)
+* Open a new project
+* Import **all** (except the *readme*, *.gitignore* and *examples* folder) files from this repo to overleaf
+* *Enjoy!*
 
-# Elements personalisables et fonctionnalités du template
+# Customizable elements and features of the template
 
-## Personnlisation
+## Personalization
 
-Depuis le fichier `config.tex` vous pouvez personnaliser : 
-* La couleur principale du document
-* La couleur du texte sur le header
-* Les éléments de la page de garde (auteur, titre, date, logo, fond de page, ...)
-* L'image d'en-tête des pages
+From the `config.tex` file you can customize : 
+* The main color of the document
+* The color of the text on the header
+* The elements of the front page (author, title, date, logo, page background, ...)
+* The header image of the pages
 
-## Fonctionalités
+## Features
 
-* Page de garde personnalisable
-* Style épuré (en-tête de couleur, typo moderne)
-* Trois niveaux de numérotation (I, 1, a)
-* Numérotation automatique des pages
-* Affichage stylisé du code (surlignement des mots clés)
-* Utilisation de "TextBox" (cf la documentation du https://mirrors.ircam.fr/pub/CTAN/graphics/awesomebox/awesomebox.pdf)
+* Customizable cover page
+* Clean style (colored header, modern typography)
+* Three levels of numbering (I, 1, a)
+* Automatic page numbering
+* Stylized display of the code (highlighting of key words)
+* Use of "TextBox" (see the documentation of https://mirrors.ircam.fr/pub/CTAN/graphics/awesomebox/awesomebox.pdf)
 
 # Licence
 
-Ce projet est sous licence libre MIT, plus d'info sur la licence ici :
-https://github.com/akgx99/LaTex-start/blob/master/LICENSE
+This project is under the MIT free license, more info on the license here :
+https://github.com/thomasbenas/LaTeX-modern-document/blob/master/LICENSE
 
-# Remarques et idées
+# Comments and ideas
 
-Pour toutes questions ou remarques relatives à ce template vous pouvez me contacter via l'adresse mail suivante : thomas@benas.fr.
+For any questions / remarks about this template you can contact me via the following email address: thomas@benas.fr.
