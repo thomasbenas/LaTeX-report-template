@@ -17,7 +17,7 @@ To use this document you first have to customize it to your liking via the `conf
 * you can compile your document with the command `pdflatex [name].tex`.
 
 ## With a software
-* VS code (avec l'extension LaTeX Workshop) ;
+* VS code ;
 * TeXMaker
 * Lyx
 * ...
