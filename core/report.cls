@@ -65,7 +65,7 @@
             \thepage \hspace{1pt} / \pageref{LastPage}%
         }% 
 }
-
+\lfoot{\copyright}
 
 %style toc
 \hypersetup{
