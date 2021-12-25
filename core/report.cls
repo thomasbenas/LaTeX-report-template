@@ -61,7 +61,10 @@
 }
 
 %page numbering style
-\rfoot{\thepage \hspace{1pt} / \pageref{LastPage}}
+\rfoot{ {\small%
+            \thepage \hspace{1pt} / \pageref{LastPage}%
+        }% 
+}
 
 
 %style toc
