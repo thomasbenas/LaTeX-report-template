@@ -80,7 +80,7 @@
                 \fontfamily{phv}\selectfont\color{textColorHeader}{\thesection}}
             }}}%
 {12pt}%
-{ \color{mainColor}#1
+{ \color{textColorSection}#1
 %
 }
 \titlespacing*{\section}{0pt}{10mm}{5mm}
@@ -96,7 +96,7 @@
                 \fontfamily{phv}\selectfont\color{textColorHeader}{\thesubsection}}
             }}}%
 {12pt}%
-{ \color{mainColor}#1
+{ \color{textColorSection}#1
 %
 }
 \titlespacing*{\subsection}{0pt}{10mm}{5mm}
@@ -110,7 +110,7 @@
                 \fontfamily{phv}\selectfont\color{textColorHeader}{\thesubsubsection}}
             }}}%
 {12pt}%
-{ \color{mainColor}#1
+{ \color{textColorSection}#1
 %
 }
 \titlespacing*{\subsubsection}{0pt}{10mm}{5mm}
