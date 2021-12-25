@@ -5,27 +5,26 @@
 
 
 %list of packages
-\RequirePackage{tikz}% utile pour dessiner en LaTeX
-\RequirePackage{graphicx}% utile pour les images
-\RequirePackage{fancyhdr}% utile pour le style du document (header, footer)
-\RequirePackage{lastpage}% donne la dernière page
-\RequirePackage{etoolbox}% quelques outils utiles à d'autres packages
-\RequirePackage[T1]{fontenc}% lettre en petit capitale
-\RequirePackage[french]{babel}% support du français
+\RequirePackage{tikz}% draw with LaTeX
+\RequirePackage{graphicx}% for images
+\RequirePackage{fancyhdr}% for layout (header, footer)
+\RequirePackage{lastpage}% give the page count
+\RequirePackage{etoolbox}% some tools for others packages
+\RequirePackage[T1]{fontenc}% small capital letter
 \RequirePackage[utf8]{inputenc}% utf-8
-\RequirePackage{geometry}% configuration du layout (marges etc)
-\RequirePackage[explicit]{titlesec}% style des titres
-\RequirePackage{xcolor}% couleurs personalisées
-\RequirePackage{hyperref}% lien hypertexte dans le doc
-\RequirePackage{awesomebox}% box infos etc
-\RequirePackage{lipsum}% génére du texte pour les exemples
-\RequirePackage{changepage}% permet de définir des marges à un élément (entre autre)
-\RequirePackage{eso-pic}% quelques outils utiles à d'autres packages
-\RequirePackage{csvsimple} % tableau depuis csv
-\RequirePackage{booktabs} % stylisation de tableau
-\RequirePackage{listings}%
-\RequirePackage{lstautogobble}%
-\RequirePackage{zi4}% style de l'affichage de code          
+\RequirePackage{geometry}% layout configuration
+\RequirePackage[explicit]{titlesec}% section / subsection / subsubsection style
+\RequirePackage{xcolor}% custom color
+\RequirePackage{hyperref}% hypertext link support
+\RequirePackage{awesomebox}% beautifull boxes
+\RequirePackage{lipsum}% auto genrate text
+\RequirePackage{changepage}% set margin
+\RequirePackage{eso-pic}% some tools for other package
+\RequirePackage{csvsimple} % table from csv
+\RequirePackage{booktabs} % stylization of tables
+\RequirePackage{listings}% display code
+\RequirePackage{lstautogobble}% remove lines count on code display
+\RequirePackage{zi4}% stylization of code  
 
 
 %fonts
