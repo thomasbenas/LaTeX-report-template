@@ -1,37 +1,63 @@
-## Welcome to GitHub Pages
+# LaTeX-modern-document
+LaTeX-modern-document is a LaTeX template to create professional looking reports quickly and effortlessly.
 
-You can use the [editor on GitHub](https://github.com/thomasbenas/LaTeX-modern-document/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
+# preview
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+| cover page | sample page |
+| :------------------: | :------------------: |
+| [![A custom title page](examples/cover-page.png)](examples/document.pdf) | [![A basic example page](examples/page.png)](examples/document.pdf) |
 
-### Markdown
+# Dependencies
+* A functional LaTeX environment (TeXLive for example).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Quick start
+To use this document you first have to customize it to your liking via the `config.tex` file, then compile it:
 
-```markdown
-Syntax highlighted code block
+## In command line
+* you can compile your document with the command `pdflatex [name].tex`.
 
-# Header 1
-## Header 2
-### Header 3
+## With a software
+* VS code ;
+* TeXMaker
+* Lyx
+* ...
 
-- Bulleted
-- List
+## With OverLeaf
+* Create an account (if you don't have one)
+* Open a new project
+* Import **all** (except the *readme*, *.gitignore* and *examples* folder) files from this repo to overleaf
+* *Enjoy!*
 
-1. Numbered
-2. List
+# Customizable elements and features of the template
 
-**Bold** and _Italic_ and `Code` text
+## Personalization
 
-[Link](url) and ![Image](src)
-```
+From the `config.tex` file you can customize : 
+* The language of the document (english, french, german, ...)
+* The main color of the document
+* The color of the text on the header
+* The color of the text of section / subsection / subsubsection
+* The elements of the front page (author, title, date, logo, image background, ...)
+* The header image of the pages
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Features
 
-### Jekyll Themes
+* multi-language support
+* Customizable cover page
+* Clean style (colored header, modern typography)
+* Three levels of numbering (I, 1, a)
+* Automatic page numbering
+* Stylized display of the code (highlighting of key words)
+* Tables from CSV (see the documentation : https://ctan.org/pkg/csvsimple?lang=en )
+* Use of "TextBox" (see the documentation : https://mirrors.ircam.fr/pub/CTAN/graphics/awesomebox/awesomebox.pdf)
+* Use of fontAwesome5 icons (see the documentation : http://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf)
+* Copyright display
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/thomasbenas/LaTeX-modern-document/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+# Licence
 
-### Support or Contact
+This project is under the CC-BY-NC license, more info on the license here :
+https://github.com/thomasbenas/LaTeX-modern-document/blob/master/LICENSE
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Comments and ideas
+
+For any questions / remarks about this template you can contact me via the following email address: thomas@benas.fr.
