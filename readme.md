@@ -55,7 +55,7 @@ From the `config.tex` file you can customize :
 
 # Licence
 
-This project is under the MIT free license, more info on the license here :
+This project is under the CC-BY-NC license, more info on the license here :
 https://github.com/thomasbenas/LaTeX-modern-document/blob/master/LICENSE
 
 # Comments and ideas
