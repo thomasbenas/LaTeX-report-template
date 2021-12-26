@@ -5,7 +5,7 @@ LaTeX-modern-document is a LaTeX template to create professional looking reports
 
 | cover page | sample page |
 | :------------------: | :------------------: |
-| [![A custom title page](examples/cover-page.png)](examples/document.pdf) | [![A basic example page](examples/page.png)](examples/document.pdf) |
+| [![A custom title page](https://github.com/thomasbenas/LaTeX-modern-document/blob/master/examples/cover-page.png)](examples/document.pdf) | [![A basic example page](https://github.com/thomasbenas/LaTeX-modern-document/blob/master/examples/page.png)](https://github.com/thomasbenas/LaTeX-modern-document/blob/master/examples/document.pdf) |
 
 # Dependencies
 * A functional LaTeX environment (TeXLive for example).
