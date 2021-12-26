@@ -1,27 +1,29 @@
-# Dependencies
+# LaTeX Modern Document
+
+## Dependencies
 * A functional LaTeX environment (TeXLive for example).
 
-# Quick start
+## Quick start
 To use this document you first have to customize it to your liking via the `config.tex` file, then compile it:
 
-## In command line
+### In command line
 * you can compile your document with the command `pdflatex [name].tex`.
 
-## With a software
+### With a software
 * VS code ;
 * TeXMaker
 * Lyx
 * ...
 
-## With OverLeaf
+### With OverLeaf
 * Create an account (if you don't have one)
 * Open a new project
 * Import **all** (except the *readme*, *.gitignore* and *examples* folder) files from this repo to overleaf
 * *Enjoy!*
 
-# Customizable elements and features of the template
+## Customizable elements and features of the template
 
-## Personalization
+### Personalization
 
 From the `config.tex` file you can customize : 
 * The language of the document (english, french, german, ...)
@@ -31,7 +33,7 @@ From the `config.tex` file you can customize :
 * The elements of the front page (author, title, date, logo, image background, ...)
 * The header image of the pages
 
-## Features
+### Features
 
 * multi-language support
 * Customizable cover page
@@ -44,11 +46,11 @@ From the `config.tex` file you can customize :
 * Use of fontAwesome5 icons (see the documentation : http://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf)
 * Copyright display
 
-# Licence
+## Licence
 
 This project is under the CC-BY-NC license, more info on the license here :
 https://github.com/thomasbenas/LaTeX-modern-document/blob/master/LICENSE
 
-# Comments and ideas
+## Comments and ideas
 
 For any questions / remarks about this template you can contact me via the following email address: thomas@benas.fr.
