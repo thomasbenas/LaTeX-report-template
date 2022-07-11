@@ -29,6 +29,7 @@
 
 \RequirePackage[sorting=none]{biblatex} % bibliograpy bibtex
 \RequirePackage{csquotes} % usefull for bibtex
+\RequirePackage{float}
 
 %fonts
 \RequirePackage[scaled=.85]{helvet} 
@@ -93,6 +94,8 @@
 \titlespacing*{\section}{0pt}{10mm}{5mm}
 
 
+%toc style
+
 %style subsection
 \renewcommand*\thesubsection{\arabic{subsection}}
 \renewcommand*\thesubsection{\arabic{subsection})}
@@ -124,6 +127,8 @@
 }
 \titlespacing*{\subsubsection}{0pt}{10mm}{5mm}
 
+% no border on link
+\hypersetup{pdfborder=0 0 0}
 
 %code style
 \definecolor{bluekeywords}{rgb}{0.13, 0.13, 1}
@@ -152,6 +157,8 @@
     tabsize=4,
     captionpos=b
 }
+%
+\makeatother
 
 %add of user info
 \input{config.tex}
