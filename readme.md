@@ -18,8 +18,8 @@ To use this document you first have to customize it to your liking via the `conf
 
 ## With a software
 * VS code ;
-* TeXMaker
-* Lyx
+* TeXMaker ;
+* Lyx ;
 * ...
 
 ## With OverLeaf
@@ -51,6 +51,7 @@ From the `config.tex` file you can customize :
 * Tables from CSV (see the documentation : https://ctan.org/pkg/csvsimple?lang=en )
 * Use of "TextBox" (see the documentation : https://mirrors.ircam.fr/pub/CTAN/graphics/awesomebox/awesomebox.pdf)
 * Use of fontAwesome5 icons (see the documentation : http://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf)
+* Citations and support of bibTeX
 * Copyright display
 
 # Licence
