@@ -37,7 +37,7 @@ From the `config.tex` file you can customize :
 * The main color of the document
 * The color of the text on the header
 * The color of the text of section / subsection / subsubsection
-* The elements of the front page (author, title, date, logo, image background, ...)
+* The elements of the front page (author, compagny, copyright, title, date, logo, image background, ...)
 * The header image of the pages
 
 ## Features
