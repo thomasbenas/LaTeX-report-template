@@ -3,6 +3,8 @@
 \LoadClass[12pt]{article}
 \ProvidesClass{core/report}
 
+\hbadness=99999 % disallow most of "underfull \hbox" soft warring 
+
 
 %list of packages
 \RequirePackage{tikz}% draw with LaTeX
