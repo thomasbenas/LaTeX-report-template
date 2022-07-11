@@ -9,3 +9,8 @@
 *.toc
 
 !/examples/document.pdf
+*.bcf
+*.bbl
+*.blg
+*.xml
+.DS_Store
