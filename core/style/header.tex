@@ -1,0 +1,12 @@
+\patchcmd{\section}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+\pagestyle{fancy}
+\fancyhf{}
+
+%page header style
+\fancyhead[C]{%
+\begin{tikzpicture}[overlay, remember picture]%
+    \fill[mainColor] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
+    \node[anchor=north west, text=textColorHeader, font=\scshape\large\bfseries, minimum size=1in, inner xsep=5mm] at (current page.north west) {\title};
+    \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=\headerImageScale]{\headerImage}};
+\end{tikzpicture}
+}
