@@ -24,11 +24,7 @@
 \RequirePackage{eso-pic}% some tools for other package
 \RequirePackage{csvsimple} % table from csv
 \RequirePackage{booktabs} % stylization of tables
-\RequirePackage{listings}% display code
-\RequirePackage{lstautogobble}% remove lines count on code display
-\RequirePackage{zi4}% stylization of code  
 \RequirePackage{fontawesome5} % font awesome 5 support
-
 \RequirePackage[sorting=none]{biblatex} % bibliograpy bibtex
 \RequirePackage{csquotes} % usefull for bibtex
 \RequirePackage{float}
