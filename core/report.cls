@@ -130,38 +130,13 @@
 % no border on link
 \hypersetup{pdfborder=0 0 0}
 
-%code style
-\definecolor{bluekeywords}{rgb}{0.13, 0.13, 1}
-\definecolor{greencomments}{rgb}{0, 0.5, 0}
-\definecolor{redstrings}{rgb}{0.9, 0, 0}
-\definecolor{graynumbers}{rgb}{0.5, 0.5, 0.5}
-
-\usepackage{listings}
-\lstset{
-    autogobble,
-    columns=fullflexible,
-    showspaces=false,
-    showtabs=false,
-    breaklines=true,
-    showstringspaces=false,
-    breakatwhitespace=true,
-    escapeinside={(*@}{@*)},
-    commentstyle=\color{greencomments},
-    keywordstyle=\color{bluekeywords},
-    stringstyle=\color{redstrings},
-    numberstyle=\color{graynumbers},
-    basicstyle=\ttfamily\footnotesize,
-    frame=l,
-    framesep=12pt,
-    xleftmargin=12pt,
-    tabsize=4,
-    captionpos=b
-}
 %
 \makeatother
 
 %add of user info
 \input{config.tex}
 
-\hypersetup{pdfborder=0 0 0}
-\makeatother
+%add code style
+\input{core/code_style}
+
+
