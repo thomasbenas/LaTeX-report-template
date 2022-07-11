@@ -77,7 +77,6 @@
 }
 
 %style section
-\renewcommand*\thesection{\roman{section}}
 \renewcommand*\thesection{\sffamily\scshape\roman{section})}
 
 \titleformat{\section}[hang]{\large\sffamily\scshape}%
@@ -95,7 +94,6 @@
 %toc style
 
 %style subsection
-\renewcommand*\thesubsection{\arabic{subsection}}
 \renewcommand*\thesubsection{\arabic{subsection})}
 
 
@@ -111,7 +109,6 @@
 \titlespacing*{\subsection}{0pt}{10mm}{5mm}
 
 %style subsection
-\renewcommand*\thesubsubsection{\normalsize\alph{subsubsection}}
 \renewcommand*\thesubsubsection{\normalsize\alph{subsubsection})}
 
 \titleformat{\subsubsection}[hang]{\large\sffamily}%
