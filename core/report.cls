@@ -94,6 +94,7 @@
 
 %style subsection
 \renewcommand*\thesubsection{\arabic{subsection}}
+\renewcommand*\thesubsection{\arabic{subsection})}
 
 
 \titleformat{\subsection}[hang]{\large\sffamily}%
@@ -109,6 +110,7 @@
 
 %style subsection
 \renewcommand*\thesubsubsection{\normalsize\alph{subsubsection}}
+\renewcommand*\thesubsubsection{\normalsize\alph{subsubsection})}
 
 \titleformat{\subsubsection}[hang]{\large\sffamily}%
 {\colorbox{mainColor}{%
