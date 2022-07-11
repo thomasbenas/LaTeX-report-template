@@ -1,0 +1,42 @@
+%style section
+\renewcommand*\thesection{\sffamily\scshape\roman{section})}
+
+\titleformat{\section}[hang]{\large\sffamily\scshape}%
+{\colorbox{mainColor}{%
+           \raisebox{0pt}[12pt][3pt]{ \makebox[20pt]{% height, width
+                \fontfamily{phv}\selectfont\color{textColorHeader}{\thesection}}
+            }}}%
+{12pt}%
+{ \color{textColorSection}#1
+%
+}
+\titlespacing*{\section}{0pt}{10mm}{5mm}
+
+%style subsection
+\renewcommand*\thesubsection{\arabic{subsection})}
+
+
+\titleformat{\subsection}[hang]{\large\sffamily}%
+{\colorbox{mainColor}{%
+           \raisebox{0pt}[12pt][3pt]{ \makebox[20pt]{% height, width
+                \fontfamily{phv}\selectfont\color{textColorHeader}{\thesubsection}}
+            }}}%
+{12pt}%
+{ \color{textColorSection}#1
+%
+}
+\titlespacing*{\subsection}{0pt}{10mm}{5mm}
+
+%style subsection
+\renewcommand*\thesubsubsection{\normalsize\alph{subsubsection})}
+
+\titleformat{\subsubsection}[hang]{\large\sffamily}%
+{\colorbox{mainColor}{%
+           \raisebox{0pt}[12pt][3pt]{ \makebox[20pt]{% height, width
+                \fontfamily{phv}\selectfont\color{textColorHeader}{\thesubsubsection}}
+            }}}%
+{12pt}%
+{ \color{textColorSection}#1
+%
+}
+\titlespacing*{\subsubsection}{0pt}{10mm}{5mm}
