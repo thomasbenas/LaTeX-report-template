@@ -27,6 +27,8 @@
 \RequirePackage{zi4}% stylization of code  
 \RequirePackage{fontawesome5} % font awesome 5 support
 
+\RequirePackage[sorting=none]{biblatex} % bibliograpy bibtex
+\RequirePackage{csquotes} % usefull for bibtex
 
 %fonts
 \RequirePackage[scaled=.85]{helvet} 
