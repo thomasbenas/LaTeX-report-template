@@ -79,6 +79,7 @@
 
 %style section
 \renewcommand*\thesection{\roman{section}}
+\renewcommand*\thesection{\sffamily\scshape\roman{section})}
 
 \titleformat{\section}[hang]{\large\sffamily\scshape}%
 {\colorbox{mainColor}{%
