@@ -5,6 +5,7 @@
 \hbadness=99999 % disallow most of "underfull \hbox" soft warring 
 
 \input{core/package_list.tex}
+\input{core/biblio.tex}
 \input{core/style/font.tex}
 \input{core/style/layout.tex}
 \input{core/style/header.tex}
