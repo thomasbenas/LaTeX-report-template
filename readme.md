@@ -1,5 +1,5 @@
-# LaTeX-modern-document
-LaTeX-modern-document is a LaTeX template to create professional looking reports quickly and effortlessly.
+# LaTeX-template-template
+LaTeX-report-template is a LaTeX template to create professional looking reports quickly and effortlessly.
 
 # preview
 
@@ -57,7 +57,7 @@ From the `config.tex` file you can customize :
 # Licence
 
 This project is under the CC-BY-NC license, more info on the license here :
-https://github.com/thomasbenas/LaTeX-modern-document/blob/master/LICENSE
+https://github.com/thomasbenas/LaTeX-report-template/blob/master/LICENSE
 
 # Comments and ideas
 
