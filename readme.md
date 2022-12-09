@@ -45,7 +45,7 @@ From the `config.tex` file you can customize :
 * multi-language support
 * Customizable cover page
 * Clean style (colored header, modern typography)
-* Three levels of numbering (I, 1, a)
+* Three levels of numbering
 * Automatic page numbering
 * Stylized display of the code (highlighting of key words)
 * Tables from CSV (see the documentation : https://ctan.org/pkg/csvsimple?lang=en )
