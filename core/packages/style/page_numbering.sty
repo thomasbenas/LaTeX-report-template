@@ -1,0 +1,33 @@
+% LaTeX-modern-document package : page-numbering
+% 
+% (c) Thomas Bénas
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+
+
+\RequirePackage{fancyhdr}% for layout (header, footer)
+\RequirePackage{lastpage}% give the page count
+\RequirePackage{hyperref}% hypertext link support
+\RequirePackage{fontawesome5} % font awesome 5 support
+\RequirePackage{geometry}% layout configuration
+\ProvidesPackage{core/packages/style/page_numbering}
+  [2022/04/11 v1.0 LaTeX package for the header of each page]
+
+  \newgeometry{ 
+  , top    = 3cm
+  , bottom = 3.5cm
+  , left   = 3cm
+  , right  = 3cm }
+  \f@nch@setoffs
+
+
+   %page numbering style
+    \lfoot{\copyright}
+    \rfoot{{\small \thepage \hspace{1pt} / \pageref{LastPage}}}
+  \endinput
+%%
+%% End of file `page_numbering.sty'.

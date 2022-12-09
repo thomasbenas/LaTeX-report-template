@@ -1,0 +1,21 @@
+% LaTeX-modern-document package : subsection
+% 
+% (c) Thomas Bénas
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+ 
+\RequirePackage[explicit]{titlesec}% section / subsection / subsubsection style
+\RequirePackage{sectsty}
+\ProvidesPackage{core/packages/style/subsection}
+  [2022/04/11 v1.0 LaTeX package for the formatting the subsection]
+
+    \renewcommand*\thesubsection{\arabic{section}.\arabic{subsection})}
+    \subsectionfont{\color{mainColor}} 
+
+  \endinput
+%%
+%% End of file `subsection.sty'.
