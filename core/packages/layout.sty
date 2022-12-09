@@ -1,0 +1,36 @@
+% LaTeX-modern-document package : layout
+% 
+% (c) Thomas Bénas
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+
+\RequirePackage{tikz}% draw with LaTeX
+\RequirePackage{geometry}% layout configuration
+\ProvidesPackage{core/packages/layout}
+  [2022/04/11 v1.0 LaTeX package for the formatting the text]
+
+    \usetikzlibrary{calc}
+    \renewcommand{\headrulewidth}{0pt}
+    \geometry{
+    a4paper,
+    left=2cm,
+    right=2cm,
+    top=3.5cm,
+    bottom=3cm,
+    headheight=15pt,
+    }
+
+    \hypersetup{                               
+    pdfborder={0 0 0},
+    colorlinks=true, 
+    linktoc=all,     
+    linkcolor=black,
+    } 
+
+  \endinput
+%%
+%% End of file `layout.sty'.

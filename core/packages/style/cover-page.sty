@@ -1,0 +1,30 @@
+% LaTeX-modern-document package : cover-page
+% 
+% (c) Thomas Bénas
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+ 
+\RequirePackage{etoolbox}% some tools for others packages
+\RequirePackage{changepage}% set margin
+\RequirePackage{float}
+\RequirePackage{eso-pic}% some tools for other package
+\ProvidesPackage{core/packages/style/cover-page}
+  [2022/04/11 v1.0 LaTeX package for the formatting the cover-page]
+
+\newcommand\BackgroundPic{%
+    \put(0,0){%
+    \parbox[b][\paperheight]{\paperwidth}{%
+    \vfill
+    \centering
+    \includegraphics[width=\paperwidth,height=\paperheight,%
+    keepaspectratio]{\coverSheetImage}%
+    \vfill
+    }}}
+
+  \endinput
+%%
+%% End of file `cover-page.sty'.

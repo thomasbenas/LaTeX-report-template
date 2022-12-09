@@ -1,0 +1,47 @@
+% LaTeX-modern-document package : code
+% 
+% (c) Thomas Bénas
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+
+\RequirePackage{listings}% display code
+\RequirePackage{zi4}% stylization of code 
+\RequirePackage{lstautogobble}% remove lines count on code display
+\RequirePackage{xcolor}% custom color
+\ProvidesPackage{core/packages/style/code}
+  [2022/04/11 v1.0 LaTeX package for the formatting of the code]
+
+    \definecolor{bluekeywords}{rgb}{0.13, 0.13, 1}
+    \definecolor{greencomments}{rgb}{0, 0.5, 0}
+    \definecolor{redstrings}{rgb}{0.9, 0, 0}
+    \definecolor{graynumbers}{rgb}{0.5, 0.5, 0.5}
+
+    \usepackage{listings}
+    \lstset{
+        autogobble,
+        columns=fullflexible,
+        showspaces=false,
+        showtabs=false,
+        breaklines=true,
+        showstringspaces=false,
+        breakatwhitespace=true,
+        escapeinside={(*@}{@*)},
+        commentstyle=\color{greencomments},
+        keywordstyle=\color{bluekeywords},
+        stringstyle=\color{redstrings},
+        numberstyle=\color{graynumbers},
+        basicstyle=\ttfamily\footnotesize,
+        frame=l,
+        framesep=12pt,
+        xleftmargin=12pt,
+        tabsize=4,
+        captionpos=b
+    }
+
+  \endinput
+%%
+%% End of file `code.sty'.
