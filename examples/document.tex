@@ -1,16 +1,22 @@
-% !TEX root =  ./document.tex
-\documentclass{core/report}
+\documentclass{core/report-template}
+\include{config.tex}
 
 \begin{document}
-\include{core/coverSheet}
-%%% YOUR DOCUMENT START HERE %%%
-\section{Lorem Ipsum}
-\lipsum[1-2]
+\input{coversheet.tex}
+\tableofcontents
+\newpage
+\setcounter{page}{1}
+%%%% DOCUMENT START HERE %%%%
 
-\notebox{Lorem ipsum...}
+\section{Test}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tincidunt ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus suscipit velit ac eleifend ornare. Fusce turpis augue, scelerisque ut enim ac, posuere malesuada massa. Donec sed ex urna. Suspendisse potenti. Ut tempus consequat risus in vehicula.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tincidunt ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus suscipit velit ac eleifend ornare. Fusce turpis augue, scelerisque ut enim ac, posuere malesuada massa. Donec sed ex urna. Suspendisse potenti. Ut tempus consequat risus in vehicula.
 
-\subsection{Nulla malesuada}
-\lipsum[3-3]
+\subsection{testou}
+Phasellus vel lacus vel eros hendrerit sodales ac sed sapien. Aenean eget orci id mauris rhoncus semper. Integer posuere maximus arcu. Vestibulum erat mauris, tristique vel venenatis a, tempus vel ligula. Donec ut leo id arcu tristique laoreet quis vitae ligula. Sed rhoncus finibus neque, eget convallis tellus. Praesent ut massa a sem porta suscipit. Pellentesque et tellus ligula.
+
+\subsubsection{Testpa}
+Cras vitae neque ut tellus ultrices sodales. Nunc elementum pharetra lectus, sed dignissim purus posuere in. Quisque at porta felis. In eu hendrerit libero. Sed scelerisque sapien urna, in laoreet leo rutrum a. Phasellus elit nunc, scelerisque et nisi nec, faucibus dignissim ante. Nulla lobortis orci ut est mattis, at gravida massa pretium. In sit amet mi odio. Nullam eget tincidunt ante, quis rutrum magna. Nulla fringilla dolor ac sagittis posuere. Vivamus malesuada, ex quis convallis mattis, erat sapien elementum ex, sed sodales ipsum sapien convallis nunc. Duis ac nibh tempor, luctus erat vel, viverra lacus. 
 
 \subsubsection{ipsum}
 \begin{lstlisting}[language=Java,caption=Some Java code ]
@@ -21,6 +27,5 @@
         return num * exp(pow-1, num) ;
 }
 \end{lstlisting}
-
-%\printbibliography % uncomment for print biblio 
+%%%% DOCUMENT END HERE %%%%
 \end{document}

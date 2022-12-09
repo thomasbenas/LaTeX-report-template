@@ -1,0 +1,29 @@
+%%%%%%%%%% GENERAL %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\date{\today}
+\RequirePackage[english]{babel}% define language of document (english by default) — babel is the name of the package
+\def\coversheet{true}% false if you don't want a coversheet
+
+%%%%%%%%%%% COLOR %%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\definecolor{mainColor}{HTML}{315399} % document main color (blue by default)
+\definecolor{textColorHeader}{HTML}{C1C9D1} % color text header (light grey by default)
+
+%%%%%%%%%%% IMAGE %%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\headerImage{assets/img/paper-clip.png} % header image of document
+\def\headerImageScale{.2} % sclale of header image (0.2 by default)
+\def\coverSheetImage{assets/img/background.png} % image coverpage
+\def\logoImage{assets/img/paper-clip.png} % logo on cover page 
+
+%%%%%%%%%%% INFOS %%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\title{Document Title} % the title of the document
+\def\author{Document Author} % the author of the document
+\def\compagny{Compagny Name}
+\def\copyright{%  the copyright of the document, by default CC-BY-CC — leave it empty if don't need it
+    {\tiny %
+    \title,~\the\year{},~\compagny,~by \author~is under licence :~%
+    \href{https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1}{\faCreativeCommons~\faCreativeCommonsBy~\faCreativeCommonsNc}
+    }%
+}
