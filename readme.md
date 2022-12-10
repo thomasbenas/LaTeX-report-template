@@ -1,4 +1,4 @@
-# LaTeX-template-template
+# LaTeX-report-template
 LaTeX-report-template is a LaTeX template to create professional looking reports quickly and effortlessly.
 
 # preview
