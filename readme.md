@@ -3,9 +3,7 @@ LaTeX-report-template is a LaTeX template to create professional looking reports
 
 # preview
 
-| cover page | sample page |
-| :------------------: | :------------------: |
-| [![A custom title page](examples/cover-page.png)](examples/document.pdf) | [![A basic example page](examples/page.png)](examples/document.pdf) |
+[![A custom title page](examples/presentation.png)](examples/document.pdf)
 
 # Dependencies
 * A functional LaTeX environment (TeXLive for example).
