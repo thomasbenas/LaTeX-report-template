@@ -1,13 +1,13 @@
 \documentclass{core/report-template}
-\include{config.tex}
+\input{config.tex}
+
+% !TEX root =  ./document.tex
 
 \begin{document}
 \input{coversheet.tex}
 \tableofcontents
 \newpage
-\setcounter{page}{1}
 %%%% DOCUMENT START HERE %%%%
-
 \section{Test}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tincidunt ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus suscipit velit ac eleifend ornare. Fusce turpis augue, scelerisque ut enim ac, posuere malesuada massa. Donec sed ex urna. Suspendisse potenti. Ut tempus consequat risus in vehicula.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae tincidunt ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus suscipit velit ac eleifend ornare. Fusce turpis augue, scelerisque ut enim ac, posuere malesuada massa. Donec sed ex urna. Suspendisse potenti. Ut tempus consequat risus in vehicula.
@@ -27,5 +27,8 @@ Cras vitae neque ut tellus ultrices sodales. Nunc elementum pharetra lectus, sed
         return num * exp(pow-1, num) ;
 }
 \end{lstlisting}
+
+%\renewcommand\refname{} % empty by default - fill if you want a custom title bibliography
+%\printbibliography
 %%%% DOCUMENT END HERE %%%%
 \end{document}
