@@ -1,0 +1,22 @@
+% LaTeX-modern-document package : fancy
+% 
+% (c) Thomas Bénas
+%
+%% This program can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN archives
+%% in directory macros/latex/base/lppl.txt.
+% 
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+
+\RequirePackage{etoolbox}% some tools for others packages
+\RequirePackage{fancyhdr}% for layout (header, footer)
+\ProvidesPackage{core/packages/style/header}
+  [2022/04/11 v1.0 LaTeX package for the header of each page]
+
+    \patchcmd{\section}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
+    \pagestyle{fancy}
+    \fancyhf{}
+    
+  \endinput
+%%
+%% End of file `fancy.sty'.

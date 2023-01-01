@@ -1,4 +1,4 @@
-% LaTeX-modern-document package : font
+% LaTeX-modern-document package : header
 % 
 % (c) Thomas Bénas
 %
@@ -11,25 +11,19 @@
 \RequirePackage{tikz}% draw with LaTeX
 \RequirePackage{etoolbox}% some tools for others packages
 \RequirePackage{fancyhdr}% for layout (header, footer)
-\RequirePackage[explicit]{titlesec}% section / subsection / subsubsection style
 \RequirePackage{xcolor}% custom color
 \RequirePackage[scaled=.85]{helvet} 
 \ProvidesPackage{core/packages/style/header}
   [2022/04/11 v1.0 LaTeX package for the header of each page]
 
-    \patchcmd{\section}{\thispagestyle{plain}}{\thispagestyle{fancy}}{}{}
-    \pagestyle{fancy}
-    \fancyhf{}
-
-    %page header style
     \fancyhead[C]{%
-        \begin{tikzpicture}[overlay, remember picture]%
-            \fill[mainColor] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
-            \node[anchor=north west, text=textColorHeader, font=\scshape\large\bfseries, minimum size=1in, inner xsep=5mm] at (current page.north west) {\title};
-            \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=\headerImageScale]{\headerImage}};
-        \end{tikzpicture}
+    \begin{tikzpicture}[overlay, remember picture]%
+        \fill[mainColor] (current page.north west) rectangle ($(current page.north east)+(0,-1in)$);
+        \node[anchor=north west, text=textColorHeader, font=\scshape\large\bfseries, minimum size=1in, inner xsep=5mm] at (current page.north west) {\title};
+        \node[anchor=north east, minimum size=1in, inner xsep=5mm] at (current page.north east) {\includegraphics[scale=\headerImageScale]{\headerImage}};
+    \end{tikzpicture}
     }
-
+    
   \endinput
 %%
 %% End of file `header.sty'.
