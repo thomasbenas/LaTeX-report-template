@@ -1,6 +1,6 @@
 %general config
 \NeedsTeXFormat{LaTeX2e}
-\LoadClass[12pt]{article}
+\LoadClass[a4paper, 12pt]{article}
 \ProvidesClass{core/report-template}
 \hbadness=99999 % disallow most of "underfull \hbox" soft warring 
 
