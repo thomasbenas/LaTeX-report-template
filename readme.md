@@ -30,7 +30,7 @@ To use this document you first have to customize it to your liking via the `conf
 
 ## Personalization
 
-From the `config.tex` file you can customize : 
+From the `config.sty` file you can customize : 
 * The language of the document (english, french, german, ...)
 * The main color of the document
 * The color of the text on the header
