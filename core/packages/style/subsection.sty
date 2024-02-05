@@ -1,4 +1,4 @@
-% LaTeX-modern-document package : section
+% LaTeX-modern-document package : subsection
 % 
 % (c) Thomas Bénas
 %
@@ -10,12 +10,12 @@
  
 \RequirePackage[explicit]{titlesec}% section / subsection / subsubsection style
 \RequirePackage{sectsty}
-\ProvidesPackage{core/packages/style/section}
-  [2022/04/11 v1.0 LaTeX package for the formatting the section]
+\ProvidesPackage{core/packages/style/subsection}
+  [2022/04/11 v1.0 LaTeX package for the formatting the subsection]
 
-    \renewcommand*\thesection{\scshape\arabic{section}}
-    \sectionfont{\color{mainColor}} 
+    \renewcommand*\thesubsection{\arabic{section}.\arabic{subsection}}
+    \subsectionfont{\color{mainColor}} 
 
   \endinput
 %%
-%% End of file `section.sty'.
+%% End of file `subsection.sty'.

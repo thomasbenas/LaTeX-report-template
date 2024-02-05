@@ -11,7 +11,6 @@
 \RequirePackage{tikz}% draw with LaTeX
 \RequirePackage{geometry}% layout configuration
 \RequirePackage{float}
-\RequirePackage[scaled=.85]{helvet} 
 \ProvidesPackage{core/packages/layout}
   [2022/04/11 v1.0 LaTeX package for the formatting the text]
 
@@ -21,16 +20,18 @@
     a4paper,
     left=2cm,
     right=2cm,
-    top=3.5cm,
+    top=2cm,
     bottom=2cm,
     headheight=15pt,
     }
 
     \hypersetup{                               
     pdfborder={0 0 0},
-    colorlinks=true, 
+    colorlinks=false, 
     linktoc=all,     
-    linkcolor=black,
+    linkcolor=mainColor,
+    citecolor=mainColor,
+    filecolor = mainColor,
     } 
 
   \endinput

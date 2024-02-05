@@ -1,12 +1,22 @@
 \documentclass{core/report-template}
-\input{config.tex}
-
 % !TEX root =  ./document.tex
+
+\usepackage{afterpage}
+
+\newcommand\blankpage{%
+    \null
+    \thispagestyle{empty}%
+    \addtocounter{page}{-1}%
+    \newpage}
 
 \begin{document}
 \input{coversheet.tex}
+\blankpage
 \tableofcontents
 \newpage
+%\listoffigures
+%\lstlistoflistings
+%\newpage
 %%%% DOCUMENT START HERE %%%%
 \section{test}
 This is a test.
